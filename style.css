@@ -1,0 +1,253 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+/* -------------GENERAL STYLES-------------------*/
+* {
+  font-family: sans-serif;
+}
+
+.body-main {
+  padding: 30px;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+* h1 {
+  color: var(--dark-grayish-blue);
+}
+
+* h2 {
+  color: var(--dark-grayish-blue);
+}
+
+/* -------------BUTTON STYLES-------------------*/
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.btns .ios {
+  background-color: var(--strong-cyan);
+}
+.btns .mac {
+  background-color: var(--light-blue);
+}
+
+button {
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: larger;
+}
+
+/* -------------MOBILE STYLES-------------------*/
+.header {
+  margin-bottom: 150px;
+}
+.header .head_img {
+  padding: 0;
+  position: absolute;
+  width: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header .desk_head_img {
+  display: none;
+}
+.header svg {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.middle {
+  margin-bottom: 150px;
+}
+.middle .computer {
+  width: 300px;
+  /*max-width: 375px;*/
+  margin: 50px auto;
+}
+.middle .text {
+  text-align: center;
+}
+
+.bottom {
+  margin-bottom: 150px;
+}
+.bottom svg {
+  margin: 30px auto;
+}
+.bottom .top {
+  margin-bottom: 50px;
+}
+.bottom .devices {
+  width: 300px;
+  /*max-width: 375px;*/
+  margin: 50px auto;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+.logos .logo {
+  margin: 10px auto;
+  width: 40%;
+}
+
+.download {
+  margin-bottom: 150px;
+}
+
+.bottom-container {
+  position: fixed bottom;
+  margin-top: 50px;
+  background: var(--grayish-blue);
+  padding: 30px 0;
+}
+.bottom-container svg {
+  margin-bottom: 20px;
+}
+.bottom-container .row {
+  margin: 10px auto;
+}
+.bottom-container .items {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.bottom-container .items .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bottom-container .icons {
+  margin-left: 6em;
+}
+.bottom-container .icons * {
+  margin: 5px 15px;
+}
+.bottom-container a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+
+/* -------------DESKTOP STYLES-------------------*/
+@media only screen and (min-width: 768px) {
+  .body-main {
+    padding: 50px;
+  }
+  .btns {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32em;
+  }
+  .btns .ios:hover {
+    background-color: hsl(171deg, 64%, 55%);
+  }
+  .btns .mac:hover {
+    background-color: hsl(233deg, 97%, 74%);
+  }
+  .header {
+    margin-bottom: 150px;
+  }
+  .header .head_img {
+    display: none;
+  }
+  .header .desk_head_img {
+    display: block;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .header svg {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  .middle {
+    margin-bottom: 150px;
+  }
+  .middle .computer {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0px;
+  }
+  .middle .text {
+    text-align: left;
+    float: right;
+    margin-top: 5em;
+  }
+  .bottom .devices {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .bottom .flex {
+    display: flex;
+  }
+  .bottom .flex .flex-item p {
+    width: 70%;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 150px;
+  }
+  .logos .logo {
+    margin: 10px auto;
+    width: 8%;
+  }
+  .bottom-container {
+    display: flex;
+    position: fixed bottom;
+    margin-top: 50px;
+    background: var(--grayish-blue);
+    padding: 30px 0;
+  }
+  .bottom-container .row {
+    margin: 10px auto;
+  }
+  .bottom-container .mg-top {
+    margin: auto;
+  }
+  .bottom-container .items {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .bottom-container .items .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bottom-container .icons {
+    margin-left: 6em;
+  }
+  .bottom-container .icons * {
+    margin: 5px 15px;
+  }
+  .bottom-container a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+  }
+  .bottom-container * a:hover {
+    color: var(--strong-cyan);
+  }
+}/*# sourceMappingURL=style.css.map */
